@@ -282,8 +282,7 @@ a{
   .project-card{
     width: 90%;
     height: 550px;
-    background-image: url(./projects/Project1.png);
-    background-size: cover;
+    
     background-repeat: no-repeat;
     position: relative;
     box-shadow: 0px 0px 40px #1f1f1f;
@@ -322,6 +321,14 @@ a{
     font-weight: 600;
     font-size: 200px;
     z-index: 10;
+    /* display: none; */
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  .project-card:hover .project-number{
+    /* display: block; */
+    opacity: 1;
+
   }
   .project-number-left{
     right: -40px;
@@ -356,4 +363,56 @@ a{
    }
    .project-skill{
     width: 40px;
+   }
+   .project-heading{
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 3rem;
+   }
+   .project-subheading{
+    width: 70%;
+    font-size: 16px;
+    font-style: italic;
+   }
+   .btn-grp{
+    display: flex;
+    gap: 0.9rem;
+    align-items: center;
+   }
+   .btn-project:hover{
+    border: none;
+   }
+   .icon{
+    cursor: pointer;
+    color: white;
+    font-size:35px ;
+    transition: all 0.4s;
+   }
+   .icon:hover{
+    color: var(--bgOrange);
+   }
+   .project-card:hover .project-content{
+    transform: scale(1.1);
+   }
+   #project1{
+    background-image: url(./projects/Project1.png);
+    background-size: cover;
+
+   }
+    #project2{
+       margin: 120px;
+    background-image: url(./projects/Project2.png);
+    background-size: cover;
+
+   }
+    #project3{
+    background-image: url(./projects/Project3.png);
+    background-size: cover;
+
+   }
+    #project4{
+      margin: 120px;
+    background-image: url(./projects/Project4.png);
+    background-size: cover;
+
    }
