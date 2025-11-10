@@ -7,19 +7,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
   
-
+<style>
+  .corefeaturesection{
+    background-size: 100% 100%;
+    padding-top:12rem ;
+    padding-bottom: 12rem;
+  }
+  .companiesList{
+    animation:10s infinite linear moveCompany;
+  }
+  @keyframes moveCompany {
+      0%{
+        top:0;
+      }  
+      100%{
+        top: -50%;
+      }  
+  }
+</style>
   <title>Razorpay</title>
-   <style>
-        .corefeaturesection{
-            background-size: 100% 100%;
-            padding-top: 12rem;
-            padding-bottom: 12rem;
-        }
-    </style>
+   
 </head>
 
-<body class="overflow-x-hidden">
-
+<body>
+<div class="overflow-x-hidden relative w-full">
   <!-- nav bar -->
   <nav class="bg-[#04032D] flex overflow-x-hidden ">
     <div class="relative w-[1080px] mx-auto flex items-center justify-evenly flex-wrap">
@@ -129,7 +140,7 @@
 
   <!-- Feature section -->
 
-  <section class="relative mt-[190px] overflow-hidden">
+  <section class="relative mt-[190px] overflow-hidden ">
     <img src="./src/images/feature-section1-dottedrows.png" alt="" loading="lazy" width="233" height="167"
       class="absolute -top-[8rem] left-[10rem] z-10 inline-block">
     <img src="./src/images/feature-section1-dottedrows.png" alt="" loading="lazy" width="233" height="167"
@@ -496,7 +507,7 @@
 
 
  <!-- feature section2 -->
-  <section class="bg-[url(./src/images/feature-section-2BG.svg)] bg-no-repeat bg-cover pt-16rem pb-[500px] mt-14 ">
+  <section class="bg-[url(./src/images/feature-section-2BG.svg)] bg-no-repeat bg-cover pt-1rem pb-[300px] mt-20rem ">
     <div class="w-10/12 max-w-[1080px]  relative mx-auto pt-4">
       <h2 class="font-serif text-center text-2xl leading-[1.2] font-extrabold mt-40 text-white ">Explore Razorpay Business Banking</h2>
       <div class="w-6 h-1 bg-green-500 mx-auto mt-4 mb-6"></div>
@@ -733,9 +744,9 @@
       </div>
          </div>
          <!-- Demo box -->
-         <div>
-          <p>Check out the live demo to learn how RazorpayX works.
-            <span>No sign-up required!</span></p>
+         <div class="flex w-full items-center justify-evenly border border-slate-700 mb-24 gap-y-6   relative rounded-md p-8">
+          <p class="text-white  font-serif text-xl ">Check out the live demo to learn how RazorpayX works.
+            <span class="font-bold">No sign-up required!</span></p>
           <button class="bg-blue-500 w-fit rounded-md  font-bold py-[15px] px-[70px]
               relative hover:bg-blue-700 font-serif transition-all duration-200 flex items-center justify-start text-white ">Check out the demo
                 <div class="w-10 h-[54px] bg-green-500 absolute right-6 skew-x-[20deg] flex justify-center items-center  ">
@@ -747,9 +758,228 @@
     </div>
   </section>
 
+  <!-- new feature -->
+   <section class="bg-white relative">
+      <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
+        <img src="./src/images/feature-section1-dottedrows.png" alt="" loading="lazy" class="absolute w-[233px] left-[300px] -top-[4rem] z-10">
+        <img src="./src/images/feature-section1-dottedrows.png" alt="" loading="lazy" class="absolute w-[233px] -right-[3.5rem] -top-[6rem] z-10" >
+        <div class="grid relative w-full grid-cols-3  gap-y-10 gap-x-4 z-10">
+          <!-- item1 -->
+           <div class="relative flex items-center z-100 bg-white">
+            <h2 class="text-blue-950 font-extrabold font-serif text-4xl leading-[3.5rem] ">
+              New in the 
+              <span class="text-blue-600">Razorpay</span> <br>
+               Product Suite</h2>
+           </div>
+           <!-- card1 -->
+            <!-- <img src="./src/images/instant-settlement-bghover.svg" alt=""> -->
+            <div class="bg-[url(./src/images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 -z-50 bg-white transition-all hover:shadow-gray-900 duration-200 
+            hover:bg-[url(./src/images/instant-settlement-bghover.svg)] p-10">
+              <img src="./src/images/razorpayXicon.svg" alt="" loading="lazy" class="w-10 h-10 ">
+              <h3 class="font-serif text-lg font-bold pt-4">Corporate Cards</h3>
+              <p class="font-serif py-3 text-gray-600 leading-normal">Simplify your recurring, international and team expenses with savings on every spend. Save upto 10 lacs every month.</p>
+              <div class="flex items-center flex-col w-fit cursor-pointer group">
+              <a href="#" class="font-serif font-bold text-blue-400 group-hover:text-blue-700 transition-all duration-200 flex items-center z-10">Know More
+                <i class="fa-solid   fa-angle-right  text-blue-500 group-hover:text-blue-700 transition-all duration-200 ml-0.5"></i>
+              </a>
+              
+            </div>
+            </div>
+           <!-- card2 -->
+             <div class="bg-[url(./src/images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 transition-all bg-white duration-200 
+            hover:bg-[url(./src/images/instant-settlement-bghover.svg)] p-10">
+              <img src="./src/images/razorpayXicon.svg" alt="" loading="lazy" class="w-10 h-10 ">
+              <h3 class="font-serif text-lg font-bold pt-4">Corporate Cards</h3>
+              <p class="font-serif py-3 text-gray-600 leading-normal">Simplify your recurring, international and team expenses with savings on every spend. Save upto 10 lacs every month.</p>
+              <div class="flex items-center flex-col w-fit cursor-pointer group">
+              <a href="#" class="font-serif font-bold text-blue-400 group-hover:text-blue-700 transition-all duration-200 flex items-center z-10">Know More
+                <i class="fa-solid   fa-angle-right  text-blue-500 group-hover:text-blue-700 transition-all duration-200 ml-0.5"></i>
+              </a>
+              
+            </div>
+            </div>
+           <!-- card3 -->
+             <div class="bg-[url(./src/images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 transition-all bg-white duration-200 
+            hover:bg-[url(./src/images/instant-settlement-bghover.svg)] p-10">
+              <img src="./src/images/razorpayXicon.svg" alt="" loading="lazy" class="w-10 h-10 ">
+              <h3 class="font-serif text-lg font-bold pt-4">Corporate Cards</h3>
+              <p class="font-serif py-3 text-gray-600 leading-normal">Simplify your recurring, international and team expenses with savings on every spend. Save upto 10 lacs every month.</p>
+              <div class="flex items-center flex-col w-fit cursor-pointer group">
+              <a href="#" class="font-serif font-bold text-blue-400 group-hover:text-blue-700 transition-all duration-200 flex items-center z-10">Know More
+                <i class="fa-solid   fa-angle-right  text-blue-500 group-hover:text-blue-700 transition-all duration-200 ml-0.5"></i>
+              </a>
+              
+            </div>
+            </div>
+           <!-- card4 -->
+             <div class="bg-[url(./src/images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 transition-all bg-white duration-200 
+            hover:bg-[url(./src/images/instant-settlement-bghover.svg)] p-10">
+              <img src="./src/images/razorpayXicon.svg" alt="" loading="lazy" class="w-10 h-10 ">
+              <h3 class="font-serif text-lg font-bold pt-4">Corporate Cards</h3>
+              <p class="font-serif py-3 text-gray-600 leading-normal">Simplify your recurring, international and team expenses with savings on every spend. Save upto 10 lacs every month.</p>
+              <div class="flex items-center flex-col w-fit cursor-pointer group">
+              <a href="#" class="font-serif font-bold text-blue-400 group-hover:text-blue-700 transition-all duration-200 flex items-center z-10">Know More
+                <i class="fa-solid   fa-angle-right  text-blue-500 group-hover:text-blue-700 transition-all duration-200 ml-0.5"></i>
+              </a>
+              
+            </div>
+            </div>
+           <!-- card5 -->
+             <div class="bg-[url(./src/images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 transition-all  bg-white duration-200 
+            hover:bg-[url(./src/images/instant-settlement-bghover.svg)] p-10">
+              <img src="./src/images/razorpayXicon.svg" alt="" loading="lazy" class="w-10 h-10 ">
+              <h3 class="font-serif text-lg font-bold pt-4">Corporate Cards</h3>
+              <p class="font-serif py-3 text-gray-600 leading-normal">Simplify your recurring, international and team expenses with savings on every spend. Save upto 10 lacs every month.</p>
+              <div class="flex items-center flex-col w-fit cursor-pointer group">
+              <a href="#" class="font-serif font-bold text-blue-400 group-hover:text-blue-700 transition-all duration-200 flex items-center z-10">Know More
+                <i class="fa-solid   fa-angle-right  text-blue-500 group-hover:text-blue-700 transition-all duration-200 ml-0.5"></i>
+              </a>
+              
+            </div>
+            </div>
+
+        </div>
+      </div>
+   </section>
+<!-- core features -->
+ <!-- <img src="./src/images/core-features-sectionBg.svg" alt=""> -->
+<section class="bg-[url(./src/images/core-features-sectionBg.svg)] bg-no-repeat w-full bg-cover mt-14 relative corefeaturesection ">
+  <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
+    <h2 class="font-serif font-bold text-2xl text-center text-white ">Features</h2>
+    <div class="w-6 h-1 bg-green-600 mx-auto mt-4 mb-6"></div>
+    <p class="font-serif text-center max-w-[450px] mx-auto text-white">Empower your business with all the right tools to accept online payments and provide the best customer experience</p>
+
+    <!-- grid -->
+    <div class="w-full grid grid-cols-4 gap-[2rem] mt-8">
+      <!-- card1 -->
+       <div>
+        <img src="./src/images/instant-activation-icon.svg" alt="" loading="lazy" class=" ">
+       <h3 class="font-serif text-lg font-bold my-4 text-white">Instant Activation</h3>
+       <p class="font-serif  text-white opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
+       </div> 
+       <!-- card2 -->
+        <div>
+        <img src="./src/images/instant-activation-icon.svg" alt="" loading="lazy" class=" ">
+       <h3 class="font-serif text-lg font-bold my-4 text-white">Instant Activation</h3>
+       <p class="font-serif  text-white opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
+       </div> 
+      <!-- card3 -->
+       <div>
+        <img src="./src/images/instant-activation-icon.svg" alt="" loading="lazy" class=" ">
+       <h3 class="font-serif text-lg font-bold my-4 text-white">Instant Activation</h3>
+       <p class="font-serif  text-white opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
+       </div> 
+        <!-- card4 -->
+         <div>
+        <img src="./src/images/instant-activation-icon.svg" alt="" loading="lazy" class=" ">
+       <h3 class="font-serif text-lg font-bold my-4 text-white">Instant Activation</h3>
+       <p class="font-serif  text-white opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
+       </div> 
+        <!-- card5 -->
+         <div>
+        <img src="./src/images/instant-activation-icon.svg" alt="" loading="lazy" class=" ">
+       <h3 class="font-serif text-lg font-bold my-4 text-white">Instant Activation</h3>
+       <p class="font-serif  text-white opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
+       </div> 
+          <!-- card6 -->
+           <div>
+        <img src="./src/images/instant-activation-icon.svg" alt="" loading="lazy" class=" ">
+       <h3 class="font-serif text-lg font-bold my-4 text-white">Instant Activation</h3>
+       <p class="font-serif  text-white opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
+       </div> 
+          <!-- card7 -->
+           <div>
+        <img src="./src/images/instant-activation-icon.svg" alt="" loading="lazy" class=" ">
+       <h3 class="font-serif text-lg font-bold my-4 text-white">Instant Activation</h3>
+       <p class="font-serif  text-white opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
+       </div> 
+          <!-- card8 -->
+           <div>
+        <img src="./src/images/instant-activation-icon.svg" alt="" loading="lazy" class=" ">
+       <h3 class="font-serif text-lg font-bold my-4 text-white">Instant Activation</h3>
+       <p class="font-serif  text-white opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
+       </div> 
+       
+    </div>
+  </div>
+</section>
+
+<!-- join razorpay section -->
+ <section class="bg-[#f5f8fe] relative pt-40 pb-12 -mt-[190px] -z-10">
+    <div class="w-11/12 flex max-w-[1080px] mx-auto relative">
+      <!-- left part -->
+       <div class="flex flex-col justify-center max-w-[calc[100%-500px]]">
+        <h2 class="font-serif font-bold text-2xl text-blue-950">Join the 50,00,000+ businesses using Razorpay</h2>
+        <div class="w-6 h-1 bg-green-600  mb-10 my-4"></div>
+        <p class="font-serif text-justify opacity-80">We make it easier for you to focus on building great products while we work on simplifying your payments. Become one of us by joining thousands of our happy users and simplify the online payment experience for your customers.</p>
+        <p class="font-serif  mt-5  opacity-80">Focus on your business while we handle the complexities of payments for you.</p>
+       </div>
+       <!-- right part -->
+        <div  class="w-10/12 h-[500px] w-[500px] relative overflow-y-hidden">
+          <div style="background: linear-gradient(180deg,#f4f8ff,#fff0)"
+          class="absolute w-full h-[150px] top-0 z-50">
+
+          </div>
+          <img src="./src/images/comanies.png" alt="" loading="lazy" class="absolute  h-auto object-cover companiesList">
+          <div style="background: linear-gradient(0deg,#f4f8ff,#fff0)"
+          class="absolute w-full h-[150px] bottom-0 z-50">
+
+          </div>
+        </div> 
+    </div>
+ </section>
+
+
+ <!-- testimonail section -->
+  <section class="relative">
+    <div class="w-11/12 max-w-[1300px] mx-auto relative py-20 ">
+      <img src="./src/images/feature-section1-dottedrows.png" alt="" loading="lazy" class="absolute w-[200px] top-[8rem] left-[2rem] -z-30">
+      <h2 class="text-blue-950 font-serif font-bold text-2xl text-center">An Experience
+        <br>People Love to Talk About</h2>
+      <div class="w-6 h-1 bg-green-600 mx-auto my-4"></div>
+    
+      <!-- left button -->
+       <button class="w-[100px] h-[100px] bg-[#f4f8ff]  rounded-full left-0 top-1/2 absolute flex justify-center items-center">
+        <div class="w-[65%] h-[65%] bg-[#f4f8ff]   rounded-full  mix-blend-multiply flex justify-center items-center">
+          <i class="fa-solid fa-angle-left  text-4xl text-gray-400 "></i>
+         </div>
+       </button>
+
+       <!-- right button -->
+       <button class="absolute w-[100px] h-[100px] bg-[#f4f8ff]   rounded-full right-0 top-1/2 flex justify-center items-center">
+        <div class="w-[65%] h-[65%] bg-[#f4f8ff]   rounded-full  mix-blend-multiply flex justify-center items-center">
+          <i class="fa-solid fa-angle-right text-gray-400   text-4xl "></i>
+
+        </div>
+       </button>
+
+       <!-- main content -->
+        <!-- left section -->
+        <div>
+          <img src="./src/images/testimonial.jpg" alt="">
+
+           
+        <!-- right section -->
+
+          <div>
+            <img src="./src/images/quotes.svg" alt="">
+            <p>Readymade Closed Wallet Solution For Quick Refunds</p>
+            <a href="#">Learn More</a>
+            <h3>Lorem Ipsum</h3>
+            <p>CEO, XYZ Engineering Company</p>
+            <img src="./src/images/fake-company-logo.png" alt="">
+          </div>
+        </div>
+        <!-- 6-dot div -->
+        <div>
+           <div> </div>
+        </div>
+        
+    </div>
+  </section>
+
+</div>
   
-
-
 
 
 
